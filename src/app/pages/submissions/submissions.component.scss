@@ -1,0 +1,26 @@
+:host {
+    padding: 2rem 2rem 0 2rem;
+    display: block;
+    height: calc(100vh - 75px);
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    height: calc(100% - 160px);
+
+    .card-list {
+        height: 100%;
+        overflow-x: scroll;
+    }
+
+    .map {
+        margin-left: 2.5rem;
+        margin-right: -2rem;
+
+        agm-map {
+            height: calc(100vh - 267px);
+            width: calc(100vw - 548px);
+        }
+    }
+}

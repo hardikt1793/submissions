@@ -1,0 +1,49 @@
+<div class="filter">
+    <div class="form">
+        <div class="form-group">
+            <span>
+                <mat-icon fontIcon="search"></mat-icon>
+            </span>
+    
+            <input type="text" class="form-control search" placeholder="Search...">
+        </div>
+    
+        <select class="form-control">
+            <option>Select Form</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    
+        <select class="form-control">
+            <option>Select Status</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    
+        <div class="form-group">
+            <span>
+                <mat-icon fontIcon="date_range"></mat-icon>
+            </span>
+            
+            <input type="text" class="form-control" [matDatepicker]="picker" (click)="picker.open()">
+    
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="btn-group">
+            <button class="active">Map</button>
+            <button>List</button>
+        </div>
+    
+        <button class="link">
+            <img src="assets/icons/paper-download.svg" />
+            Export
+        </button>
+    </div>
+</div>

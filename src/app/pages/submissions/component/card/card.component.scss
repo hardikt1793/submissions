@@ -1,0 +1,82 @@
+.card {
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    padding: 1rem;
+    width: 459px;
+    margin-bottom: 0.5rem;
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+
+    .h5 {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+
+    p {
+        color: var(--gray);
+        margin-bottom: 0.5rem;
+
+        span {
+            color: var(--secondary);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            span {
+                color: var(--warning);
+            }
+        }
+    }
+
+    .chip {
+        font-size: 0.875rem;
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 0.25rem 1rem;
+        display: flex;
+        align-items: center;
+    
+        i {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.25rem;
+        }
+        
+        &.warning {
+            color: var(--warning);
+            border-color: var(--warning);
+            background-color: rgba(255, 61, 0, 0.1);
+    
+            i {
+                background: var(--warning);
+            }
+        }
+    
+        &.success {
+            color: var(--success);
+            border-color: var(--success);
+            background-color: var(--gray1);
+    
+            i {
+                background: var(--success);
+            }
+        }
+    
+        &.disable {
+            color: var(--gray);
+            border-color: var(--gray);
+            background-color: var(--gray2);
+    
+            i {
+                background: var(--gray);
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<h2 class="h2">Submissions</h2>
+
+<app-filters></app-filters>
+
+<div class="main-content">
+    <div class="card-list">
+        <app-card *ngFor="let card of cardList" [card]="card"></app-card>
+    </div>
+    
+    <div class="map">
+        <agm-map
+        [latitude]="latitude"
+        [longitude]="longitude"
+        [zoom]="2"
+      >
+        <agm-marker
+          *ngFor="let marker of markers"
+          [latitude]="marker.latitude"
+          [longitude]="marker.longitude"
+          [opacity]="marker.alpha"
+          [markerDraggable]="true"
+          iconUrl='./assets/icons/map-marker.svg'
+        >
+        </agm-marker>
+      </agm-map>
+    </div>
+</div>
