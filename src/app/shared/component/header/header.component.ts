@@ -1,47 +1,46 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
+  // navigation menu list
   navigation: {
-    name: string,
-    iconName: string,
-    link: string
+    name: string;
+    iconName: string;
+    link: string;
   }[] = [
     {
-      name: 'Forms',
-      iconName: 'view_list',
-      link: 'forms'
+      name: "Forms",
+      iconName: "view_list",
+      link: "forms",
     },
     {
-      name: 'Customers',
-      iconName: 'people',
-      link: 'customers'
+      name: "Customers",
+      iconName: "people",
+      link: "customers",
     },
     {
-      name: 'Submissions',
-      iconName: 'graphic_eq',
-      link: 'submissions'
+      name: "Submissions",
+      iconName: "graphic_eq",
+      link: "submissions",
     },
     {
-      name: 'History',
-      iconName: 'history',
-      link: 'history'
+      name: "History",
+      iconName: "history",
+      link: "history",
     },
     {
-      name: 'Reports',
-      iconName: 'assessment',
-      link: 'reports'
+      name: "Reports",
+      iconName: "assessment",
+      link: "reports",
     },
     {
-      name: 'Workflow',
-      iconName: 'assessment',
-      link: 'workflow'
-    }
-  ]
-
-  constructor() { }
+      name: "Workflow",
+      iconName: "assessment",
+      link: "workflow",
+    },
+  ];
 }

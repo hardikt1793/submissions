@@ -1,26 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input } from "@angular/core";
+import { Card } from "../../models/card.model";
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: "app-card",
+  templateUrl: "./card.component.html",
+  styleUrls: ["./card.component.scss"],
 })
 export class CardComponent {
-  @Input() card: {
-    title: string,
-    action: string,
-    actionType: string,
-    from: string,
-    to: string,
-    dueDate: string,
-  } = {
-    title: 'name',
-    action: 'incomplete',
-    actionType: 'warning',
-    from: 'from',
-    to: 'test',
-    dueDate: "test"
+  // card details
+  @Input() card: Card = {
+    title: "name",
+    action: "incomplete",
+    actionType: "warning",
+    from: "from",
+    to: "test",
+    dueDate: "test",
   };
-
-  constructor() { }
 }
